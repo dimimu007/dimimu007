@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    background-image: linear-gradient(orange, #fff);
+    font-size: 1.2rem;
+}
+
+main {
+    position: relative;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #000;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h1 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 800;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
+figcaption {
+    display: none;
+}
+
+h2 {
+    color: green;
+}
+
+th, td, caption {
+    border: 1px solid #333;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: separate;
+    padding: 0.5rem;
+}
+
+.top {
+    display: block;
+    text-align: center;
+}
+
+.hoursmain {
+    margin: 8rem 0.5rem 2rem;
+    line-height: 1.5;
+}
+
+a:any-link {
+    color: #000;
+}
+
+a:hover, a:focus {
+    opacity: 0.6;
+}
+
+.design {
+    background-color: green;
+    color: #fff;
+    width: 30%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    animation: slide 0.5s ease-in-out forwards;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes slide {
+    0% {
+        top: -20px;
+        transform: skew(0deg, -5deg) scaleY(0);
+    }
+
+    80% {
+        top: 30px;
+        transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+
+    100% {
+        top: 20px;
+        transform: skew(-10deg, -5deg) scaleY(1);
+    }
+}
